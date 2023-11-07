@@ -7,7 +7,12 @@ class InitialState extends CubitStates {
   List<Object> get props => [];
 }
 
-class WelcomeState extends CubitStates {
+class LoadingState extends CubitStates {
+  @override
+  List<Object> get props => [];
+}
+
+class LoadedState extends CubitStates {
   @override
   List<Object> get props => [];
 }

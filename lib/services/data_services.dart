@@ -4,7 +4,7 @@ import 'package:travelesque/model/data_model.dart';
 import 'package:http/http.dart' as http;
 
 class DataServices{
-  static const  String baseUrl = "http://127.0.0.1:8000";
+  static const  String baseUrl = "http://mark.bslmeiyu.com/api";
  Future<List<DataModel>> getInfo() async {
     var apiUrl = '/api/getplaces';
     http.Response res = await http.get(Uri.parse(baseUrl+apiUrl));
