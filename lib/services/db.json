@@ -1,0 +1,41 @@
+{
+    "data": [
+      {
+        "name": "Rafting Expedition",
+        "img": "img/rafting.jpg",
+        "price": 1500,
+        "people": 10,
+        "stars": 4,
+        "description": "Experience the thrill of white water rafting in Rishikesh.",
+        "location": "Rishikesh, Uttarakhand"
+      },
+      {
+        "name": "Roopkund Trek",
+        "img": "img/trekking.jpg",
+        "price": 2500,
+        "people": 15,
+        "stars": 5,
+        "description": "Embark on a high-altitude trek to Roopkund Lake.",
+        "location": "Chamoli, Uttarakhand"
+      },
+      {
+        "name": "Goa Adventure",
+        "img": "img/goa.jpg",
+        "price": 1200,
+        "people": 8,
+        "stars": 4,
+        "description": "Enjoy a thrilling package of water sports in Goa.",
+        "location": "Goa"
+      },
+      {
+        "name": "Paragliding",
+        "img": "img/paragliding.jpg",
+        "price": 1800,
+        "people": 12,
+        "stars": 5,
+        "description": "Soar through the skies at Bir Billing.",
+        "location": "Bir Billing, HP"
+      }
+    ]
+  }
+  

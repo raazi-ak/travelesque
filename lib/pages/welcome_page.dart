@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:travelesque/cubit/app_cubits.dart';
 import 'package:travelesque/misc/colors.dart';
 import 'package:travelesque/widgets/app_large_text.dart';
 import 'package:travelesque/widgets/app_text.dart';
 import 'package:travelesque/widgets/responsive_button.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -47,18 +49,35 @@ class _WelcomePageState extends State<WelcomePage> {
                         text: "Mountain",
                         size: 30,
                       ),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       Container(
                         width: 250,
                         child: AppText(
-                          text: "Mountains hikes give you an incredible sense of freedom along with an endurance test.",
+                          text:
+                              "Mountains hikes give you an incredible sense of freedom along with an endurance test.",
                           color: AppColors.textColor2,
                           size: 14,
                         ),
                       ),
-                      SizedBox(height: 40,),
-                      ResponsiveButton(width: 120,),
-
+                      SizedBox(
+                        height: 40,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          BlocProvider.of<AppCubits>(context).getData();
+                        },
+                        child: Container(
+                            width: 200,
+                            child: Row(
+                              children: [
+                                ResponsiveButton(
+                                  width: 120,
+                                )
+                              ],
+                            )),
+                      ),
                     ],
                   ),
                   Column(
